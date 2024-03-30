@@ -56,13 +56,10 @@ void *nextList(List *list) {
 }
 
 void *lastList(List *list) {
-  if(list->current == NULL){
+  if(list->tail == NULL){
     return NULL;
   }
-  while(1){
-    if(list->current->next == NULL) break;
-    list->current = list->current->next;
-  }
+  list->current = list->tail;
   return list->current->data;
 }
 
