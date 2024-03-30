@@ -87,3 +87,16 @@ Sat 30 Mar 2024 08:34:17 PM UTC:
  tests:  9|3
 total_score: 35/70
 971ba40
+Sat 30 Mar 2024 08:44:30 PM UTC: 
+ list.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:87:15: error: too few arguments to function ‘createNode’
+   87 |   Node* aux = createNode();
+      |               ^~~~~~~~~~
+list.c:22:7: note: declared here
+   22 | Node *createNode(void *data) {
+      |       ^~~~~~~~~~
+Compilation failed
+011e86c
