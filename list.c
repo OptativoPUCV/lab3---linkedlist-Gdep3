@@ -80,8 +80,8 @@ void pushFront(List *list, void *data) {
   Node* aux = list->head;
   while(aux->next != NULL){
     aux = aux->next;
-    list->tail = aux;
   }
+  list->tail = aux;
 }
 
 void pushBack(List *list, void *data) {
@@ -89,9 +89,7 @@ void pushBack(List *list, void *data) {
   pushCurrent(list, data);
 }
 
-void pushCurrent(List *list, void *data) {
-  
-}
+void pushCurrent(List *list, void *data) {}
 
 void *popFront(List *list) {
   list->current = list->head;
