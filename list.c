@@ -57,9 +57,7 @@ void *prevList(List *list) {
   return NULL;
 }
 
-void pushFront(List *list, void *data) {
-  return NULL;
-}
+void pushFront(List *list, void *data) {}
 
 void pushBack(List *list, void *data) {
   list->current = list->tail;
