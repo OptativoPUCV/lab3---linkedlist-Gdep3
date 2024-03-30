@@ -79,7 +79,7 @@ void pushBack(List *list, void *data) {
 
 void pushCurrent(List *list, void *data) {
   Node* nuevoNodo = createNode(data);
-  list->head = nuevoNodo;
+  list->head = nuevoNodo->data;
 }
 
 void *popFront(List *list) {
