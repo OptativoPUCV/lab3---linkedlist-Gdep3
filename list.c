@@ -46,29 +46,19 @@ void *firstList(List *list) {
 }
 
 void *nextList(List *list) {
-  list->current = list->current->next;
-  return list->current;
+  return NULL;
 }
 
 void *lastList(List *list) {
-  while (list->current != NULL) {
-    list->current->prev = list->current;
-    list->current = list->current->next;
-  }
-  list->current = list->current->prev;
-  return list->current;
+  return NULL;
 }
 
 void *prevList(List *list) {
-  list->current = list->current->prev;
-  return list->current;
+  return NULL;
 }
 
 void pushFront(List *list, void *data) {
-  Node* newNode = (Node*)malloc(sizeof(Node));
-  newNode->data = data;
-  newNode->next = list->head;
-  list->head = newNode;
+  return NULL;
 }
 
 void pushBack(List *list, void *data) {
